@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tom & Jerry</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lugrasimo&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: "Lugrasimo", cursive;
+        }
+
+        h1,
+        button {
+            margin: 10px;
+        }
+
+        button {
+            height: 35px;
+            width: 90px;
+            background-color: rgb(47, 164, 241);
+            color: white;
+            cursor: pointer;
+            border: none;
+            border-radius: 10px;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+
+        button:hover {
+            opacity: 90%;
+        }
+
+        button:active {
+            opacity: 70%;
+        }
+
+        .cartoon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        .card {
+            cursor: pointer;
+            height: 460px;
+            width: 350px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+
+        .card:hover{
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+
+        .tom_text {
+            color: #525153;
+        }
+
+        .jerry_text {
+            color: #aa6439;
+        }
+
+        .tomCat {
+            height: 320px;
+            width: 200px;
+            object-fit: contain;
+        }
+
+        .jerryMouse {
+            height: 320px;
+            width: 200px;
+            object-fit: contain;
+        }
+
+        .tomHead {
+            color: #525153;
+        }
+
+        .jerryHead {
+            color: #aa6439;
+        }
+
+        @media (max-width: 678px){
+            .card{
+                height: 500px;
+            }
+        }
+        @media (max-width: 550px){
+            .cartoon{
+                flex-wrap: wrap;
+            }
+            .card{
+                margin: 30px auto 30px;
+            }
+        }
+        @media (max-width: 256px){
+            .card{
+                height: 550px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <h1><span class="tomHead">Tom</span> & <span class="jerryHead">Jerry</span> Show</h1>
+        <button>
+            <a href="https://youtube.com/playlist?list=PLJYf0JdTApCqAbZImkQagXEuByh-b_7To&si=orqzg76YgC0hXLMv">Watch
+                Now</a>
+        </button>
+        <div class="cartoon">
+            <div class="card">
+                <a href="https://en.wikipedia.org/wiki/Tom_Cat">
+                    <img class="tomCat" src="https://upload.wikimedia.org/wikipedia/en/f/f6/Tom_Tom_and_Jerry.png"
+                        alt="Tom Cat">
+                </a>
+                <h3 class="tom_text">Meet Tom</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur atque, debitis exercitationem
+                    facere
+                    laudantium molestias nisi numquam praesentium quis velit.</p>
+
+            </div>
+            <div class="card">
+                <a href="https://en.wikipedia.org/wiki/Jerry_Mouse">
+                    <img class="jerryMouse" src="https://upload.wikimedia.org/wikipedia/en/2/2f/Jerry_Mouse.png"
+                        alt="Tom Cat">
+                </a>
+                <h3 class="jerry_text">Meet Tom</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur atque, debitis exercitationem
+                    facere
+                    laudantium molestias nisi numquam praesentium quis velit.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

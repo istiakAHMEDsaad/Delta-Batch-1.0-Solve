@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3d Card</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: "Roboto", sans-serif;
+        }
+        h2{
+            margin: 20px 20px;
+        }
+        .card{
+            height: 250px;
+            width: 200px;
+            display: inline-block;
+            margin: 20px 20px;
+            border-radius: 5px;cursor: pointer;
+            box-shadow: .5px .5px 5px black;
+            transition: 1s;
+        }
+        .card:hover{
+            cursor: pointer;
+            box-shadow: 2px 2px 15px black;
+        }
+        .pic{
+            width: 200px;
+            height: 200px;
+            border-radius: 5px;
+            object-fit: cover;
+        }
+        .details{
+            padding-left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Tajrin Marriage</h2>
+    <div class="card">
+        <img class="pic" src="https://scontent.fdac24-5.fna.fbcdn.net/v/t39.30808-6/425478310_1055607362315712_6757077882703795369_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeExmTn7Uf-FtE8yWuKa2-i0PNfh3KSGqzA81-HcpIarMFDC_oWPdNz6nK9RJg8RhoZAr30PRPNEp-a7ORf1qrVg&_nc_ohc=N-L5x5nLLVQAb47k7Oa&_nc_ht=scontent.fdac24-5.fna&oh=00_AfA3-d4OgxCXckCXEgvqK2jd1ZqSTiRJiMMfossx-W4dDQ&oe=66270B89" alt="">
+        <div class="details">
+            <h3>Tajrin</h3>
+            <p>Beautiful Lady</p>
+        </div>
+    </div>
+    <div class="card">
+        <img class="pic" src="https://thumbs.dreamstime.com/b/unknown-man-17709264.jpg" alt="">
+        <div class="details">
+            <h3>Husband</h3>
+            <p>Perfect husband ever exist</p>
+        </div>
+    </div>
+</body>
+
+</html>

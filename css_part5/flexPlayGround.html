@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flex</title>
+    <style>
+        h2{
+            font-size: 2em;
+        }
+        #container{
+            border: 2px solid black;
+            height: 300px;
+            width: 300px;
+            background-color: white;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            flex-wrap: nowrap;
+            align-items: flex-start;
+        }
+        .box,
+        .box1,
+        .box2{
+            border: 1px solid black;
+            color: white;
+            height: 90px;
+            width: 90px;
+            text-align: center;
+            font-size: 1.2em;
+            margin: 5px;
+        }
+        .box{
+            background-color: red;
+        }
+        .box1{
+            background-color: blue;
+        }
+        .box2{
+            background-color: yellow;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+<h2>FlexBox Direction</h2>
+<div id="container">
+    <div class="box">Red</div>
+    <div class="box1">Blue</div>
+    <div class="box2">Yellow</div>
+</div>
+</body>
+</html>

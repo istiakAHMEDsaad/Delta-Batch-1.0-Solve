@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <title>Smile Emoji</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .canvas{
+            margin: 40px;
+        }
+
+        .face {
+            border: 1px solid black;
+            width: 300px;
+            height: 300px;
+            border-radius: 150px;
+            background-color: rgb(255, 204, 77);
+        }
+
+        .mouth {
+            background-color: #674501;
+            width: 150px;
+            height: 60px;
+            border-radius: 0 0 60px 60px;
+            position: absolute;
+            top: 220px;
+            left: 120px;
+        }
+
+        .leftEye{
+            height: 50px;
+            width: 50px;
+            background-color: #674501;
+            border-radius: 25px;
+            display: inline-block;
+            position: absolute;
+            top: 120px;
+            left: 125px;
+        }
+
+        .rightEye{
+            height: 50px;
+            width: 50px;
+            background-color: #674501;
+            border-radius: 25px;
+            display: inline-block;
+            position: absolute;
+            top: 120px;
+            left: 215px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="canvas">
+    <div class="face">
+        <div class="leftEye"></div>
+        <div class="rightEye"></div>
+        <div class="mouth"></div>
+    </div>
+</div>
+
+</body>
+</html>
